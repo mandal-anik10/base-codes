@@ -1,0 +1,515 @@
+NumExpr defaulting to 8 threads.
+[I 2023-01-31 17:17:15.311 ServerApp] jupyter_server_proxy | extension was successfully linked.
+[I 2023-01-31 17:17:15.321 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-01-31 17:17:15.470 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-01-31 17:17:15.470 ServerApp] panel.io.jupyter_server_extension | extension was successfully linked.
+[I 2023-01-31 17:17:15.493 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-01-31 17:17:15.508 ServerApp] jupyter_server_proxy | extension was successfully loaded.
+[I 2023-01-31 17:17:15.509 LabApp] JupyterLab extension loaded from /home/mandal-anik/anaconda3/lib/python3.9/site-packages/jupyterlab
+[I 2023-01-31 17:17:15.509 LabApp] JupyterLab application directory is /home/mandal-anik/anaconda3/share/jupyter/lab
+[I 2023-01-31 17:17:15.512 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-01-31 17:17:15.513 ServerApp] panel.io.jupyter_server_extension | extension was successfully loaded.
+[I 2023-01-31 17:17:15.514 ServerApp] The port 8888 is already in use, trying another port.
+[I 2023-01-31 17:17:15.514 ServerApp] The port 8889 is already in use, trying another port.
+[I 2023-01-31 17:17:15.514 ServerApp] Serving notebooks from local directory: /home/mandal-anik/Python-Projects/Rough
+[I 2023-01-31 17:17:15.514 ServerApp] Jupyter Server 1.18.1 is running at:
+[I 2023-01-31 17:17:15.514 ServerApp] http://localhost:8890/lab?token=fa892b8c33db174ba620014a3722f199218a0fafd4535376
+[I 2023-01-31 17:17:15.514 ServerApp]  or http://127.0.0.1:8890/lab?token=fa892b8c33db174ba620014a3722f199218a0fafd4535376
+[I 2023-01-31 17:17:15.514 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-01-31 17:17:15.536 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/mandal-anik/.local/share/jupyter/runtime/jpserver-7403-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/lab?token=fa892b8c33db174ba620014a3722f199218a0fafd4535376
+     or http://127.0.0.1:8890/lab?token=fa892b8c33db174ba620014a3722f199218a0fafd4535376
+[W 2023-01-31 17:17:18.706 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-01-31 17:17:19.061 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/notebooks/Ecc_ParameterSample.ipynb?content=0&1675165639056 (127.0.0.1): file or directory does not exist: 'msc_project_eccentric_tgr_bias/notebooks/Ecc_ParameterSample.ipynb'
+[W 2023-01-31 17:17:19.061 ServerApp] file or directory does not exist: 'msc_project_eccentric_tgr_bias/notebooks/Ecc_ParameterSample.ipynb'
+[W 2023-01-31 17:17:19.062 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/notebooks/Ecc_ParameterSample.ipynb?content=0&1675165639056 (127.0.0.1) 2.06ms referer=http://localhost:8890/lab
+[W 2023-01-31 17:17:19.064 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/scripts/Ecc_ParameterSample.py?content=0&1675165639057 (127.0.0.1): file or directory does not exist: 'msc_project_eccentric_tgr_bias/scripts/Ecc_ParameterSample.py'
+[W 2023-01-31 17:17:19.064 ServerApp] file or directory does not exist: 'msc_project_eccentric_tgr_bias/scripts/Ecc_ParameterSample.py'
+[W 2023-01-31 17:17:19.065 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/scripts/Ecc_ParameterSample.py?content=0&1675165639057 (127.0.0.1) 2.06ms referer=http://localhost:8890/lab
+[I 2023-01-31 17:17:19.283 ServerApp] New terminal with automatic name: 2
+TermSocket.open: 2
+TermSocket.open: Opened 2
+[W 2023-01-31 17:17:20.037 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/notebooks?1675165640033 (127.0.0.1): file or directory does not exist: 'msc_project_eccentric_tgr_bias/notebooks'
+[W 2023-01-31 17:17:20.037 ServerApp] file or directory does not exist: 'msc_project_eccentric_tgr_bias/notebooks'
+[W 2023-01-31 17:17:20.037 ServerApp] 404 GET /api/contents/msc_project_eccentric_tgr_bias/notebooks?1675165640033 (127.0.0.1) 1.52ms referer=http://localhost:8890/lab
+[I 2023-01-31 17:17:31.648 ServerApp] Creating new notebook in 
+[I 2023-01-31 17:17:31.959 ServerApp] Kernel started: fc327d3d-f753-4b3f-b448-1942aa4478cc
+[I 2023-01-31 17:19:31.820 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:21:31.844 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:23:31.868 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:25:31.911 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:29:31.949 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:31:31.971 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:33:31.997 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-01-31 17:34:34.969 ServerApp] Kernel shutdown: fc327d3d-f753-4b3f-b448-1942aa4478cc
+[W 2023-01-31 17:34:35.998 ServerApp] delete /Untitled.ipynb
+Websocket closed
+[I 2023-07-15 11:58:20.469 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-07-15 11:58:20.488 ServerApp] Package jupyter_lsp took 0.0183s to import
+[W 2023-07-15 11:58:20.488 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-15 11:58:20.496 ServerApp] Package jupyter_server_terminals took 0.0075s to import
+[I 2023-07-15 11:58:20.498 ServerApp] Package nbclassic took 0.0014s to import
+[W 2023-07-15 11:58:20.500 ServerApp] A `_jupyter_server_extension_points` function was not found in nbclassic. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-15 11:58:20.501 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-07-15 11:58:20.501 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-07-15 11:58:20.501 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-07-15 11:58:20.505 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-07-15 11:58:20.509 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-07-15 11:58:20.512 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-07-15 11:58:20.815 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-07-15 11:58:20.913 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-07-15 11:58:20.915 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-07-15 11:58:20.916 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-07-15 11:58:20.920 LabApp] JupyterLab extension loaded from /home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyterlab
+[I 2023-07-15 11:58:20.920 LabApp] JupyterLab application directory is /home/anik/anaconda3/envs/imrct/share/jupyter/lab
+[I 2023-07-15 11:58:20.920 LabApp] Extension Manager is 'pypi'.
+[I 2023-07-15 11:58:20.923 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-07-15 11:58:20.928 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-07-15 11:58:20.929 ServerApp] Serving notebooks from local directory: /home/anik/py-programs/Rough
+[I 2023-07-15 11:58:20.929 ServerApp] Jupyter Server 2.6.0 is running at:
+[I 2023-07-15 11:58:20.929 ServerApp] http://localhost:8888/lab?token=eee8669816579d06f6d8eb210722dfcdf521ab496766b97d
+[I 2023-07-15 11:58:20.929 ServerApp]     http://127.0.0.1:8888/lab?token=eee8669816579d06f6d8eb210722dfcdf521ab496766b97d
+[I 2023-07-15 11:58:20.929 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-07-15 11:58:20.956 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/anik/.local/share/jupyter/runtime/jpserver-6267-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=eee8669816579d06f6d8eb210722dfcdf521ab496766b97d
+        http://127.0.0.1:8888/lab?token=eee8669816579d06f6d8eb210722dfcdf521ab496766b97d
+[I 2023-07-15 11:58:20.999 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2023-07-15 11:58:24.952 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-07-15 11:58:25.430 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/GW150914.ipynb?content=0&1689402505424 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914.ipynb
+[W 2023-07-15 11:58:25.430 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914.ipynb)
+[W 2023-07-15 11:58:25.433 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/GW150914.ipynb?content=0&1689402505424 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 5.29ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.439 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/Fish_ligo.ipynb?content=0&1689402505425 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/Fish_ligo.ipynb
+[W 2023-07-15 11:58:25.439 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/Fish_ligo.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/Fish_ligo.ipynb)
+[W 2023-07-15 11:58:25.440 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/Fish_ligo.ipynb?content=0&1689402505425 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 4.66ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.441 ServerApp] 404 GET /api/contents/GWFish/gwfish_tutorial.ipynb?content=0&1689402505426 (127.0.0.1): No such file or directory: GWFish/gwfish_tutorial.ipynb
+[W 2023-07-15 11:58:25.441 ServerApp] wrote error: 'No such file or directory: GWFish/gwfish_tutorial.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: GWFish/gwfish_tutorial.ipynb)
+[W 2023-07-15 11:58:25.442 ServerApp] 404 GET /api/contents/GWFish/gwfish_tutorial.ipynb?content=0&1689402505426 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 5.75ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.443 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/gwfish_tutorial-Copy1.ipynb?content=0&1689402505427 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/gwfish_tutorial-Copy1.ipynb
+[W 2023-07-15 11:58:25.443 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/gwfish_tutorial-Copy1.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/gwfish_tutorial-Copy1.ipynb)
+[W 2023-07-15 11:58:25.445 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/gwfish_tutorial-Copy1.ipynb?content=0&1689402505427 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 8.02ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.446 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/Untitled.ipynb?content=0&1689402505429 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Untitled.ipynb
+[W 2023-07-15 11:58:25.446 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Untitled.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Untitled.ipynb)
+[W 2023-07-15 11:58:25.447 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/Untitled.ipynb?content=0&1689402505429 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 9.88ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.452 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/GW150914-Copy1.ipynb?content=0&1689402505432 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914-Copy1.ipynb
+[W 2023-07-15 11:58:25.452 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914-Copy1.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/GW150914-Copy1.ipynb)
+[W 2023-07-15 11:58:25.452 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/GW150914-Copy1.ipynb?content=0&1689402505432 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 3.55ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.453 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/JACOB.py?content=0&1689402505433 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/JACOB.py
+[W 2023-07-15 11:58:25.453 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/JACOB.py'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_ligo_ecc/notebook/JACOB.py)
+[W 2023-07-15 11:58:25.454 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_ligo_ecc/notebook/JACOB.py?content=0&1689402505433 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 4.46ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:25.455 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/Errors.ipynb?content=0&1689402505430 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Errors.ipynb
+[W 2023-07-15 11:58:25.455 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Errors.ipynb'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_multi/notebook/Errors.ipynb)
+[W 2023-07-15 11:58:25.456 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook/Errors.ipynb?content=0&1689402505430 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 5.66ms referer=http://localhost:8888/lab
+[W 2023-07-15 11:58:26.192 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook?1689402506189 (127.0.0.1): No such file or directory: tgr_bias/IMRCT_fish_multi/notebook
+[W 2023-07-15 11:58:26.192 ServerApp] wrote error: 'No such file or directory: tgr_bias/IMRCT_fish_multi/notebook'
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/web.py", line 1786, in _execute
+        result = await result
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/handlers.py", line 121, in get
+        model = await ensure_async(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 182, in ensure_async
+        result = await obj
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/services/contents/filemanager.py", line 877, in get
+        raise web.HTTPError(404, "No such file or directory: %s" % path)
+    tornado.web.HTTPError: HTTP 404: Not Found (No such file or directory: tgr_bias/IMRCT_fish_multi/notebook)
+[W 2023-07-15 11:58:26.192 ServerApp] 404 GET /api/contents/tgr_bias/IMRCT_fish_multi/notebook?1689402506189 (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 1.41ms referer=http://localhost:8888/lab
+[I 2023-07-15 11:58:47.293 ServerApp] Creating new notebook in 
+[I 2023-07-15 11:58:47.827 ServerApp] Kernel started: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 11:58:48.561 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 11:58:48.576 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 11:58:48.600 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 12:00:47.731 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:02:48.169 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:04:49.197 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:06:49.227 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:08:49.273 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:10:49.327 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:12:49.386 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:14:49.443 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:16:49.481 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:18:49.516 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:20:49.569 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:22:49.625 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:24:49.673 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:26:49.704 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:28:49.755 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:30:49.817 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:32:49.856 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:34:49.890 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:36:49.937 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:38:49.993 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:39:56.280 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 12:39:56.286 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:39:56.290 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 12:39:56.290 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:40:50.049 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:42:50.081 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:44:50.113 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:46:50.156 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:48:51.189 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:50:51.267 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:52:51.328 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:54:51.387 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:56:51.455 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:57:07.592 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 12:57:07.599 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:57:07.603 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 12:57:07.603 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:58:13.070 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 12:58:13.075 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:58:13.079 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 12:58:13.079 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:58:51.526 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 12:59:04.958 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 12:59:04.963 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 12:59:04.967 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 12:59:04.967 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:00:08.087 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:00:08.098 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:00:08.103 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:00:08.103 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:00:51.576 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:02:11.612 ServerApp] delete /outdir
+[W 2023-07-15 13:02:44.588 ServerApp] delete /outdir
+[I 2023-07-15 13:02:51.617 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:02:52.157 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:02:52.168 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:02:52.175 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:02:52.175 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:03:48.537 ServerApp] Kernel interrupted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[W 2023-07-15 13:03:53.263 ServerApp] delete /outdir
+[I 2023-07-15 13:04:28.625 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:04:28.636 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:04:28.642 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:04:28.642 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[W 2023-07-15 13:04:32.276 ServerApp] delete /outdir
+[I 2023-07-15 13:04:51.657 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:05:36.350 ServerApp] delete /outdir
+[I 2023-07-15 13:06:08.347 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:06:08.352 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:06:08.356 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:06:08.356 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:06:51.691 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:08:51.730 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:09:07.293 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:09:07.299 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:09:07.303 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:09:07.303 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[W 2023-07-15 13:09:22.103 ServerApp] delete /outdir
+[I 2023-07-15 13:10:51.779 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:11:10.414 ServerApp] delete /outdir
+[I 2023-07-15 13:11:17.087 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:11:17.092 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:11:17.096 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:11:17.096 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:12:52.167 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:14:15.782 ServerApp] delete /outdir
+[I 2023-07-15 13:14:19.069 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:14:19.097 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:14:19.102 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:14:19.102 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:14:52.202 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:15:41.008 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:15:41.015 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:15:41.020 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:15:41.020 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[W 2023-07-15 13:15:44.159 ServerApp] delete /outdir
+[I 2023-07-15 13:16:52.235 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:18:24.486 ServerApp] delete /outdir
+[I 2023-07-15 13:18:27.181 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:18:27.187 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:18:27.192 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:18:27.192 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:18:52.268 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:20:52.296 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:22:35.150 ServerApp] delete /outdir
+Traceback (most recent call last):
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 825, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: 'outdir/model_fitting_resume.pickle.temp' -> 'outdir/model_fitting_resume.pickle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/ipykernel_launcher.py", line 17, in <module>
+    app.launch_new_instance()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 725, in start
+    self.io_loop.start()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/platform/asyncio.py", line 195, in start
+    self.asyncio_loop.run_forever()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/asyncio/base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 731, in write_current_state_and_exit
+    super(Dynesty, self).write_current_state_and_exit(signum=signum, frame=frame)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/base_sampler.py", line 725, in write_current_state_and_exit
+    self.write_current_state()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 763, in write_current_state
+    safe_file_dump(self.sampler, self.resume_file, dill)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/utils/io.py", line 386, in safe_file_dump
+    shutil.move(temp_filename, filename)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 845, in move
+    copy_function(src, real_dst)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 444, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 264, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'outdir/model_fitting_resume.pickle.temp'
+[I 2023-07-15 13:22:36.172 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:22:36.185 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:22:36.193 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:22:36.193 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:22:52.329 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:24:46.956 ServerApp] delete /outdir
+[I 2023-07-15 13:24:52.371 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:25:26.035 ServerApp] delete /outdir
+[I 2023-07-15 13:25:29.797 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:25:29.802 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:25:29.806 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:25:29.806 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:26:53.166 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:28:53.424 ServerApp] Saving file at /Untitled.ipynb
+[W 2023-07-15 13:29:38.343 ServerApp] delete /outdir
+[W 2023-07-15 13:29:54.766 ServerApp] delete /outdir
+[I 2023-07-15 13:29:59.884 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:29:59.928 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:29:59.954 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:29:59.955 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:30:53.560 ServerApp] Saving file at /Untitled.ipynb
+[I 2023-07-15 13:32:53.676 ServerApp] Saving file at /Fit_H.ipynb
+[W 2023-07-15 13:34:01.781 ServerApp] delete /outdir
+Traceback (most recent call last):
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 825, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: 'outdir/model_fitting_resume.pickle.temp' -> 'outdir/model_fitting_resume.pickle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/ipykernel_launcher.py", line 17, in <module>
+    app.launch_new_instance()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 725, in start
+    self.io_loop.start()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/tornado/platform/asyncio.py", line 195, in start
+    self.asyncio_loop.run_forever()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/asyncio/base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 731, in write_current_state_and_exit
+    super(Dynesty, self).write_current_state_and_exit(signum=signum, frame=frame)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/base_sampler.py", line 725, in write_current_state_and_exit
+    self.write_current_state()
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/sampler/dynesty.py", line 763, in write_current_state
+    safe_file_dump(self.sampler, self.resume_file, dill)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/bilby/core/utils/io.py", line 386, in safe_file_dump
+    shutil.move(temp_filename, filename)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 845, in move
+    copy_function(src, real_dst)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 444, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/anik/anaconda3/envs/imrct/lib/python3.9/shutil.py", line 264, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'outdir/model_fitting_resume.pickle.temp'
+[I 2023-07-15 13:34:02.499 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:34:02.503 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:34:02.508 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:34:02.508 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:34:53.745 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:36:53.790 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:38:26.088 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:38:26.112 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:38:26.117 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:38:26.117 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[W 2023-07-15 13:38:50.901 ServerApp] delete /outdir
+[I 2023-07-15 13:38:53.867 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:38:54.768 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:38:54.772 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:38:54.776 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:38:54.776 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:40:53.940 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:41:39.919 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:41:39.924 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:41:39.927 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:41:39.927 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[W 2023-07-15 13:41:42.634 ServerApp] delete /outdir
+[I 2023-07-15 13:42:53.989 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:44:51.910 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:44:51.915 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:44:51.919 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:44:51.919 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:44:54.105 ServerApp] Saving file at /Fit_H.ipynb
+[W 2023-07-15 13:44:56.790 ServerApp] delete /outdir
+[I 2023-07-15 13:45:22.883 ServerApp] Kernel restarted: 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8
+[I 2023-07-15 13:45:22.891 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:45:22.896 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:45:22.897 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:46:54.161 ServerApp] Saving file at /Fit_H.ipynb
+[I 2023-07-15 13:50:07.671 ServerApp] Support files will be in 
+[I 2023-07-15 13:50:07.672 ServerApp] Writing 38172 bytes to notebook.tex
+[I 2023-07-15 13:50:07.674 ServerApp] Building PDF
+[E 2023-07-15 13:50:07.677 ServerApp] nbconvert failed: OSError('xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.')
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/nbconvert/handlers.py", line 134, in get
+        output, resources = await run_sync(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/to_thread.py", line 33, in run_sync
+        return await get_asynclib().run_sync_in_worker_thread(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+        return await future
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+        result = context.run(func, *args)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/nbconvert/handlers.py", line 135, in <lambda>
+        lambda: exporter.from_notebook_node(nb, resources=resource_dict)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 199, in from_notebook_node
+        self.run_latex(tex_file)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 168, in run_latex
+        return self.run_command(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 122, in run_command
+        raise OSError(msg)
+    OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+[W 2023-07-15 13:50:07.680 ServerApp] 500 GET /nbconvert/pdf/Fit_H.ipynb?download=true (127.0.0.1): nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+[E 2023-07-15 13:50:07.695 ServerApp] {
+      "Host": "localhost:8888",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Referer": "http://localhost:8888/lab/tree/Fit_H.ipynb",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+[E 2023-07-15 13:50:07.695 ServerApp] 500 GET /nbconvert/pdf/Fit_H.ipynb?download=true (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 520.88ms referer=http://localhost:8888/lab/tree/Fit_H.ipynb
+[I 2023-07-15 13:50:29.691 ServerApp] Support files will be in 
+[I 2023-07-15 13:50:29.692 ServerApp] Writing 38172 bytes to notebook.tex
+[I 2023-07-15 13:50:29.692 ServerApp] Building PDF
+[E 2023-07-15 13:50:29.693 ServerApp] nbconvert failed: OSError('xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.')
+    Traceback (most recent call last):
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/nbconvert/handlers.py", line 134, in get
+        output, resources = await run_sync(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/to_thread.py", line 33, in run_sync
+        return await get_asynclib().run_sync_in_worker_thread(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+        return await future
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+        result = context.run(func, *args)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/jupyter_server/nbconvert/handlers.py", line 135, in <lambda>
+        lambda: exporter.from_notebook_node(nb, resources=resource_dict)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 199, in from_notebook_node
+        self.run_latex(tex_file)
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 168, in run_latex
+        return self.run_command(
+      File "/home/anik/anaconda3/envs/imrct/lib/python3.9/site-packages/nbconvert/exporters/pdf.py", line 122, in run_command
+        raise OSError(msg)
+    OSError: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+[W 2023-07-15 13:50:29.693 ServerApp] 500 GET /nbconvert/pdf/Fit_H.ipynb?download=true (127.0.0.1): nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+[E 2023-07-15 13:50:29.694 ServerApp] {
+      "Host": "localhost:8888",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Referer": "http://localhost:8888/lab/tree/Fit_H.ipynb",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+[E 2023-07-15 13:50:29.694 ServerApp] 500 GET /nbconvert/pdf/Fit_H.ipynb?download=true (b5d73f4c8ac94e22ad6d0524aa3ebf8f@127.0.0.1) 431.67ms referer=http://localhost:8888/lab/tree/Fit_H.ipynb
+[I 2023-07-15 13:52:46.665 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 13:52:46.688 ServerApp] Connecting to kernel 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8.
+[I 2023-07-15 13:52:46.688 ServerApp] Restoring connection for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
+[I 2023-07-15 14:59:57.320 ServerApp] Starting buffering for 9bc0a5c9-5ffa-4528-9320-ebbce04be5d8:e641b29f-040d-4341-9934-55641ede5ee4
