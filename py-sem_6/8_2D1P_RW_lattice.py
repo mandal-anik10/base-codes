@@ -1,6 +1,11 @@
+'''
+2 Dim. 1 particle random walk: Lattice motion
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Basic import Sum
 
 conf_n = 1000
 event_n = 1000
@@ -17,11 +22,13 @@ for i in range(conf_n):
     for j in range(event_n):
         sum_x, sum_y = 0, 0
         for k in range(s_n):
-            th = np.random.uniform(0, 2 * np.pi)
-            x = np.cos(th)
-            y = np.sin(th)
-            sum_x = sum_x + x
-            sum_y = sum_y + y
+            dr = np.random.randint(0, 2)
+            if dr == 0:
+                x = np.random.choice([-1, 1])
+                sum_x = sum_x + x
+            else:
+                y = np.random.choice([-1, 1])
+                sum_y = sum_y + y
 
         r2 = (sum_x**2 + sum_y**2)
         sum_r2 = sum_r2 + r2
@@ -34,9 +41,9 @@ for i in range(conf_n):
     axis_rms.append(avg_rms)
     rr_list.append(rr)
 
-# RMS Fluctuation:
+# # RMS Fluctuation:
 # plt.plot(axis_conf, axis_rms)
-# plt.suptitle('2D 1 Particle Random walk-Displacement fixed\nRMS Fluctuation')
+# plt.suptitle('2D 1 Particle Random walk-Motion in Latice\nRMS Fluctuation')
 # plt.title('conf_n: ' + str(conf_n) + '; event_n: ' + str(event_n) + '; step_n: ' + str(s_n))
 # plt.xlabel('Conf_n')
 # plt.ylabel('Avg RMS value')
@@ -55,7 +62,7 @@ for i in range(len(dis_x)):
     prob.append(avg_count/len(rr_list[1]))
 
 plt.bar(dis_x, prob)
-plt.suptitle('2D 1 Particle Random walk-Displacement fixed\nProbability density')
+plt.suptitle('2D 1 Particle Random walk-Motion in Lattice\nProbability density')
 plt.title('conf_n: ' + str(conf_n) + '; event_n: ' + str(event_n) + '; step_n: ' + str(s_n))
 plt.xlabel('Displacement window')
 plt.ylabel('Probability of Occurrence')

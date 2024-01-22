@@ -1,4 +1,8 @@
-# Simulating Toss of a Coin:
+'''
+Simulating Toss of a Coin: Dstribution of number of heads for n tosses
+
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt

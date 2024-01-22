@@ -1,17 +1,10 @@
-# 1 Dim. 1 particle random walk:
+'''
+1 Dim. 1 particle random walk:
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
-# from LocalModule.Basic import Sum       # Local module, you can define a function Sum which will add elements of a
-# list
-
-
-def Sum(num_list):
-    s = 0
-    for i in range(0, len(num_list)):
-        s = s + num_list[i]
-    return s
-
 
 s_n = 16                # step number
 event_n = 1000          # event number
@@ -55,20 +48,19 @@ for i in range(len(list_pn[0])):
     avg_pn.append(total_pn/len(list_pn))
 
 avg_pn = np.array(avg_pn)
-prob_pn = avg_pn/Sum(avg_pn)
+prob_pn = avg_pn/np.sum(avg_pn)
 
 # statistical calculation:
-avg_pos = Sum(final_s*avg_pn)/Sum(avg_pn)
-rms_pos = (Sum(((final_s**2)*avg_pn))/Sum(avg_pn))**0.5
+avg_pos = np.sum(final_s*avg_pn)/np.sum(avg_pn)
+rms_pos = (np.sum(((final_s**2)*avg_pn))/np.sum(avg_pn))**0.5
 
 # plt.bar(final_s, avg_pn)
 plt.bar(final_s, prob_pn)
 
 plt.suptitle("1D 1 particle random walk")
 t = "Loop_n: "+str(loop_n)+", Event_n per loop: "+str(event_n)+", Steps_n per event: "+str(s_n)
-r = "After entire event\nAvg position: "+str(avg_pos)+",\nRMS position: "+str(rms_pos)
-plt.title(t)
-a = plt.text(7, 175, r)
+r = "After entire event Avg position: "+str(avg_pos)+", RMS position: "+str(rms_pos)
+plt.title(t+'\n'+r)
 plt.xlabel("Position after "+str(s_n)+" random steps")
 plt.ylabel("Avg probability of happening")
 

@@ -1,4 +1,8 @@
+'''
+Simulating Toss of a Coin: Fluctuation of no of heads with events
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 

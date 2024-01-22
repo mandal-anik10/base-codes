@@ -1,6 +1,11 @@
+'''
+1 Dim. 1 particle random walk: RMS vs steps
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Basic import *
 
 event_n = 1000
 loop_n = 1000
@@ -43,8 +48,8 @@ def Random_W(s_n):
         avg_pn.append(total_pn/len(list_pn))
 
     avg_pn = np.array(avg_pn)
-    avg_pos = Sum(xx*avg_pn)/Sum(avg_pn)
-    rms2_pos = (Sum(((xx**2)*avg_pn))/Sum(avg_pn))
+    avg_pos = np.sum(xx*avg_pn)/np.sum(avg_pn)
+    rms2_pos = (np.sum(((xx**2)*avg_pn))/np.sum(avg_pn))
     return [xx, avg_pn, avg_pos, rms2_pos]
 
 
@@ -55,7 +60,8 @@ for i in range(len(conf)):
     rms2_val = Random_W(conf[i])[3]
     list_rms2.append(rms2_val)
 
-plt.plot(conf, list_rms2, conf, ideal_rms2, '.r')
+plt.plot(conf, list_rms2, ':b', marker='o', mfc='w') 
+plt.plot(conf, ideal_rms2, '--r', marker='+', mfc='w')
 
 plt.suptitle("1D 1 particle random walk")
 t = "Mean square of distance against step_n\n"+"Loop_n: "+str(loop_n)+", Event_n per loop: "+str(event_n)

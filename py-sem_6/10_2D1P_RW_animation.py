@@ -1,3 +1,8 @@
+'''
+2 Dim. 1 particle random walk: Simulation with Animation
+
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -52,6 +57,8 @@ def animate(frame):
     # th = np.random.uniform(0, 2 * np.pi)
     # p.xpos = p.xpos + r * np.cos(th)
     # p.ypos = p.ypos + r * np.sin(th)
+    if frame % 30 == 0:			# for checking animation progress
+        print(frame / 6, '%')
 
 
 ani = FuncAnimation(fig, animate, frames=600, interval=100)
@@ -59,10 +66,11 @@ ani = FuncAnimation(fig, animate, frames=600, interval=100)
 plt.title('2D 1 Particle Random Walk-Motion in Lattice')
 plt.xlabel('x axis')
 plt.ylabel('y axis')
+plt.grid()
 plt.tight_layout()
 
-# Writer = FFMpegWriter(fps=10)
-# ani.save(r'C:\Users\Anik Mandal\Videos\PY3 Videos\2D1P_RW_Lattice.mp4', writer=Writer)
+Writer = FFMpegWriter(fps=10)
+ani.save('animation_RW_lattice.mp4', writer=Writer)
 
 plt.show()
 

@@ -1,8 +1,10 @@
-# 1 Dim. 1 particle random walk:
+'''
+1 Dim. 1 particle random walk: RMS fluctuation
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Basic import Sum
 
 s_n = 16                # step number
 event_n = 1000          # event number
@@ -39,8 +41,8 @@ for i in range(loop_n):
     pn = np.array(pn)
     final_pos = np.array([i for i in range(-s_n, s_n + 1)])
 
-    avg_pos = (avg_pos * i + Sum(final_pos*pn)/Sum(pn))/(i+1)
-    rms_pos = (rms_pos * i + (Sum((final_pos**2)*pn)/Sum(pn))**0.5)/(i+1)
+    avg_pos = (avg_pos * i + np.sum(final_pos*pn)/np.sum(pn))/(i+1)
+    rms_pos = (rms_pos * i + (np.sum((final_pos**2)*pn)/np.sum(pn))**0.5)/(i+1)
 
     RMS.append(rms_pos)
     conf.append(i+1)

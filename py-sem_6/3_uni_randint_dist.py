@@ -1,5 +1,8 @@
-# uniformity of random integer mumber generation in range(0,10):
+'''
+Uniformity of random integer mumber generation in range(0,10):
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 
