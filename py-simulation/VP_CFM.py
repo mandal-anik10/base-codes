@@ -1,4 +1,11 @@
 
+'''
+Vpython simulation : central force motion
+Star-planet system
+
+Author : Anik Mandal
+'''
+
 from vpython import *
 
 canvas(height = 750,width = 1500)

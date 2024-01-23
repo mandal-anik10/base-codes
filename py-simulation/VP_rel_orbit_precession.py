@@ -1,4 +1,8 @@
+'''
+Simulating precession of orbits due to GR numerically
 
+Author : Anik Mandal
+'''
 import numpy as np
 from vpython import *
 canvas(title = 'Relativistic mass and distortion of orbit of a star(G as unit)',

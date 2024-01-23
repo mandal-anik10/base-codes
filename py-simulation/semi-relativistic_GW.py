@@ -1,7 +1,13 @@
+'''
+*** Semi-relativistic simulation of formation of gravitational wave
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 from matplotlib.animation import FuncAnimation, FFMpegFileWriter
 import matplotlib.pyplot as plt
-from LocalModule.Vector_Operation import *
+from utils import *
 
 fig = plt.figure(figsize=(12,6))
 ax1 = fig.add_subplot(121)
@@ -48,8 +54,8 @@ BH1 = BH(id = 1, mass=1, pos= [[-1], [0]], momentum=[[1], [0]])
 
 BH1.mass
 def Potential_Field(loc_vector, object):
-    r = V_Subtract(loc_vector, object.pos, 2)
-    v = k * object.mass/V_Mod(r,2)
+    r = V_Subtract(loc_vector, object.pos)
+    v = k * object.mass/V_Mod(r)
     return v
 
 eps = 0.01

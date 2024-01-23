@@ -1,7 +1,9 @@
-# Trying to simulate the formation of Super cluster using huge number of particles
+'''
+*** Trying to simulate the formation of Super cluster using huge number of particles
 
+Author : Anik Mandal
+'''
 import numpy as np
-from LocalModule.Vector_Operation import *
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, FFMpegWriter
 import time as t
@@ -70,9 +72,9 @@ def animate(frame):
 
 ti = t.time()
 ani = FuncAnimation(fig, animate, frames=200, interval=50)
-# w = FFMpegWriter(fps=20)
-# f_location = r'C:\Users\Anik Mandal\Videos\PY3 Videos\Wave_1.mp4'
-# ani.save(f_location, writer=w)
+w = FFMpegWriter(fps=20)
+f_location ='outputs/wave_1.mp4'
+ani.save(f_location, writer=w)
 tf = t.time()
 print("Rendering time :", (tf-ti)/60, "min")
 

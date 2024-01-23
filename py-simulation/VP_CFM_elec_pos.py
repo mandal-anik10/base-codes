@@ -1,4 +1,9 @@
-#
+'''
+Vpython simulation : central force motion
+Electron-Positron system
+
+Author : Anik Mandal
+'''
 
 from vpython import *
 canvas(height = 750, width = 1500)

@@ -1,4 +1,8 @@
+'''
+*** Trying to simulate interaction of free quantum particle with step potential
 
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt

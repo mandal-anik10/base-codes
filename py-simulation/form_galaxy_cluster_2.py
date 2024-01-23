@@ -1,9 +1,12 @@
-# Trying to simulate the formation of Super cluster using huge number of particles
+'''
+*** Trying to simulate the formation of Super cluster using huge number of particles
 
+Author : Anik Mandal
+'''
 import numpy as np
-from LocalModule.Vector_Operation import *
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, FFMpegWriter
+from utils import *
 import time as t
 
 fig = plt.figure()
@@ -31,16 +34,16 @@ def action(id):
     dt = 0.01
     for i in range(n):
         if id != i:
-            rv = V_Subtract(pos[i], pos[id], 2)
-            ru = V_Unit(rv, 2)
-            r = V_Mod(rv, 2)
+            rv = V_Subtract(pos[i], pos[id])
+            ru = V_Unit(rv)
+            r = V_Mod(rv)
             if 0.001 < r <= radi:
-                avi = V_Scale(G / r ** 2, V_Neg(ru, 2), 2)
-                acc[id] = V_Sum(acc[id], avi, 2)
-                vel[id] = V_Sum(vel[id], V_Scale(dt, acc[id], 2), 2)
-                pos[id] = V_Sum(pos[id], V_Scale(dt, vel[id], 2), 2)
+                avi = V_Scale(V_Neg(ru), G / r ** 2)
+                acc[id] = V_Sum(acc[id], avi)
+                vel[id] = V_Sum(vel[id], V_Scale(acc[id], dt))
+                pos[id] = V_Sum(pos[id], V_Scale(vel[id], dt))
             elif 0.001 <= r:
-                pos[id] = V_Sum(pos[i], V_Scale(0.01, ru, 2), 2)
+                pos[id] = V_Sum(pos[i], V_Scale(ru, 0.01))
 
 
 def HeatMap(pixel_n, xx, yy):
@@ -76,9 +79,9 @@ def animate(frame):
 ti = t.time()
 ani = FuncAnimation(fig, animate, frames=1200, interval=50)
 w = FFMpegWriter(fps=20)
-f_location = r'C:\Users\Anik Mandal\Videos\PY3 Videos\Super Cluster_1.mp4'
+f_location = 'outputs/galaxy_cluster_1.mp4'
 ani.save(f_location, writer=w)
 tf = t.time()
 print("Rendering time :", (tf-ti)/60, "min")
 
-# plt.show()
+plt.show()
