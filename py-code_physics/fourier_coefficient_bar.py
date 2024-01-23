@@ -1,10 +1,11 @@
-# DETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :
-# AND PLOTTING OF THE EXACT FOURIER FUNCTION FOR DIFFERENT VALUES OF x :
+'''
+DETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :
+AND PLOTTING OF THE EXACT FOURIER FUNCTION FOR DIFFERENT VALUES OF x :
 
+Author : Anik Mandal
+'''
 import matplotlib.pyplot as plt
 import numpy as np
-
-print("\n\tDETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :\n\n")
 
 xi = -np.pi
 xf = np.pi
@@ -56,6 +57,8 @@ print(cs)
 
 plt.bar(bb, acc, width=0.50)
 plt.bar(bb + 0.3, acs, width=0.50)
+plt.xlabel('Index')
+plt.ylabel('Coefficient')
 # plt.plot(xx,yy)
 plt.grid()
 plt.show()

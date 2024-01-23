@@ -1,11 +1,12 @@
-# DETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :
-# AND PLOTTING OF THE EXACT FOURIER FUNCTION FOR DIFFERENT VALUES OF x :
+'''
+DETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :
+AND PLOTTING OF THE EXACT FOURIER FUNCTION FOR DIFFERENT VALUES OF x :
+
+Author : Anik Mandal
+'''
 
 import matplotlib.pyplot as plt
 import numpy as np
-from Integration import *
-
-print("\n\tDETERMINATION OF THE FOURIER SERIES COEFFICIENTS FOR GIVEN SITUATION AND BOUNDARY CONDITIONS :\n")
 
 xi = -1
 xf = 1
@@ -32,8 +33,8 @@ for i in range(nc):
     ys1 = -np.sin(np.pi * i * xx1)
     ys2 = np.sin(np.pi * i * xx2)
 
-    sc = Integrate(yc1, xi, xm, n1) + Integrate(yc2, xm, xf, n2)
-    ss = Integrate(ys1, xi, xm, n1) + Integrate(ys2, xm, xf, n2)
+    sc = np.trapz(yc1, xx1, dx=xx1[1]-xx1[0]) + np.trapz(yc2, xx2, dx=xx2[1]-xx2[0])
+    ss = np.trapz(ys1, xx1, dx=xx1[1]-xx1[0]) + np.trapz(ys2, xx2, dx=xx2[1]-xx2[0])
 
     cc.append(sc)
     cs.append(ss)

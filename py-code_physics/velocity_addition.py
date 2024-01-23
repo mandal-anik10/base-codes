@@ -1,5 +1,8 @@
-# Diagram of Velocity Addition formula
+'''
+Diagram of Velocity Addition formula
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 

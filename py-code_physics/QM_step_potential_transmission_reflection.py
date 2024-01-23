@@ -1,4 +1,9 @@
-##########################
+'''
+Coefficient of Reflection and Transmisssion as a function of E/V with slider as potential Height
+for step potential
+
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt
