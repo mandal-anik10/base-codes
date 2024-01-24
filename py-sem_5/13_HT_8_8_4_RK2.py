@@ -1,7 +1,12 @@
+'''
+#3: Solving ODE for astroid creation due to mutual collision using RK-2
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Integration import *
-import pandas as pd
+import json
 
 t0 = 0
 N0 = 100
@@ -21,7 +26,7 @@ zz = [N0]
 
 
 def m(t, N_y):
-    s = k*N_y**2
+    s = k*N_y**2        # ODE
     return s
 
 
@@ -42,9 +47,10 @@ while i < n-1:
     i = i+1
 
 
-df = pd.DataFrame({'Time(s)': tt, 'N_2': NN})
-df.to_excel(r'C:\Users\Anik Mandal\PycharmProjects\Sem_5\val_8_8_4.xlsx')
-print(df)
+data = {'Time(s)': tt, 'N_2': NN}
+with open('/home/anik/base-codes/py-sem_5/val_8_8_4.json', 'w') as f:
+    json.dump(data, f)
+print(data)
 
 
 plt.plot(tt, NN, 'r')

@@ -1,19 +1,27 @@
-# Shooting method: Inf Well Potential QM
+'''
+Shooting method: Inf Well Potential QM
+With slider for different eigen states
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.widgets import Slider
 
-
-def y2p(x, y, yp, energy):
-    p2 = -2 * energy * y
-    return p2
-
+fig = plt.figure()
+ax1 = fig.add_subplot(121)
+ax2 = fig.add_subplot(122)
+plt.subplots_adjust(0.10, 0.25)
 
 # boundary conditions:
 xi = 0
 xf = 1
 yi = 0
 yf = 0
+
+def y2p(x, y, yp, energy):
+    p2 = -2 * energy * y        # ODE
+    return p2
 
 
 def Euler_Approx(x_initial, x_final, num_point, y_initial, yp_initial, energy):
@@ -52,7 +60,7 @@ for i in range(len(ee)):
 
 
 # Scanning: Of Eigen_Values
-def Eigen_energies(Y_error):        # Will not work properly if there are some nonzero minima
+def Eigen_energies(Y_error):
     Eigen_e = []
     Err = []
     for i in range(1, len(Y_error)-1):
@@ -66,13 +74,43 @@ def Eigen_energies(Y_error):        # Will not work properly if there are some n
 Eigen_e = Eigen_energies(Y_err)[0]
 print('Eigen Energies: ', Eigen_e)
 
-# # plotting:
-n = 3       # Define Eigen State(1=ground, 2=1st_excited,...)
+# Plotting:
+# Eigen function plot:
+n = 1       # Define Eigen State(1=ground, 2=1st_excited,...)
 a = Eigen_e[n-1]
 x_data = Euler_Approx(xi, xf, num, yi, alp, a)[0]
 y_data = Euler_Approx(xi, xf, num, yi, alp, a)[1]
+ef, = ax1.plot(x_data, y_data, 'r')
+ax1.set_xlabel('x')
+ax1.set_ylabel(r'$\psi$ (x)')
+plt.suptitle('Inf. wall potential: Eigen Functions')
+ax1.grid()
+# Eigen value plot:
+ax2.plot(np.arange(1, len(Eigen_e)+1)**2, Eigen_e, '-r', marker='o')
+ax2.set_xlabel(r'square of the Quantum Number ($n^2$)')
+ax2.set_ylabel('Eigen Energy')
+ax2.set_ylim([0, np.max(Eigen_e)*1.1])
+ax2.grid()
 
-plt.plot(x_data, y_data, 'r')
-plt.title('Inf. wall potential: Eigen Function\n Quantum number= '+str(n)+' Corresponding Eigen energy value= '+str(a))
-plt.grid()
+ax1.margins(x=0)
+ax2.margins(x=0)
+
+axn = plt.axes([0.10, 0.1, 0.75, 0.03], facecolor='yellow')
+sn = Slider(axn, 'Quantum Number', 1, len(Eigen_e), valinit=n, valstep=1)
+
+
+def update(val):
+    # This function changes plot based on slider value
+    n = sn.val
+    a = Eigen_e[n-1]
+    x_data = Euler_Approx(xi, xf, num, yi, alp, a)[0]
+    y_data = Euler_Approx(xi, xf, num, yi, alp, a)[1]
+    ef.set_xdata(x_data)
+    ef.set_ydata(y_data)
+    ax1.set_ylim([np.min(y_data)*1.1, np.max(y_data)*1.1])
+
+    fig.canvas.draw_idle()
+
+sn.on_changed(update)
+
 plt.show()

@@ -1,9 +1,13 @@
-# BVP: Linearisation - 1
+'''
+BVP: Linearisation - 3
+Eq : y''(x)  + 4y(x) - 5y = 0
+BC : y(0) = 0 , y(0.5) = 1
 
+Author : Anik Mandal
+'''
 import numpy as np
 import scipy.linalg as al
 import matplotlib.pyplot as plt
-from LocalModule.Matrix_Operation import *
 
 xi = 0
 xf = 0.5
@@ -11,6 +15,7 @@ n = 3
 vr = np.linspace(xi, xf, n)
 h = (xf-xi)/(n-1)
 print(h, vr)
+
 C = np.zeros((n, n))
 
 for i in range(n):
@@ -20,7 +25,7 @@ for i in range(n):
                 C[0][0] = 1
                 C[n-1][n-1] = 1
             else:
-                C[i][j] = -5-2/h**2                 #Yn
+                C[i][j] = -5-2/h**2                         #Yn
         elif i == j+1 and i != 0 and i != n-1:
             C[i][j] = (1/h**2)-(2/h)                        #Yn-1
         elif i == j-1 and i != 0 and i != n-1:
@@ -34,7 +39,7 @@ D = [[0], [0], [1]]
 
 Cin = al.inv(C)
 
-V = M_Multiplication(Cin, D)
+V = np.matmul(Cin, D)
 print(V)
 
 x_data = vr

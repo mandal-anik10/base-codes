@@ -1,6 +1,11 @@
-#BVP: Linearisation - 1
+'''
+BVP: Linearisation - 2
+Eq : u''(r) + u'(r)/r - u(r)/r^2 = 0 
+BC : u(5) = 0.0038731, u(8) = 0.0030770
 
-from LocalModule.Matrix_Operation import *
+Author : Anik Mandal
+'''
+
 import numpy as np
 import scipy.linalg as al
 import matplotlib.pyplot as plt
@@ -13,18 +18,22 @@ h = (xf-xi)/(n-1)
 print(h, vr)
 C = np.zeros((n, n))
 
+# 1st linear eq : U_1 = 0.0038731
+# ith linear eq : U_{i-1} (1/h^2 - 1/(2*xi*h)) + U_i (-2/h^2 - 1/xi^2) + U_{i+1} (1/h^2 + 1/(2*xi*h)) = 0       # from ODE
+# last equation : U_n = 0.0030770
+
 for i in range(n):
     for j in range(n):
         if i == j:
             if i == 0 or i == n-1:
                 C[0][0] = 1
                 C[n-1][n-1] = 1
-            else:
+            else: 
                 C[i][j] = -2/h**2-1/vr[i]**2                    # Yn
         elif i == j+1 and i != 0 and i != n-1:
-            C[i][j] = 1/h**2-1/(vr[i]*h)                        # Yn-1
+            C[i][j] = 1/h**2-1/(2*vr[i]*h)                        # Yn-1
         elif i == j-1 and i != 0 and i != n-1:
-            C[i][j] = 1/h**2+1/(vr[i]*h)                         # Yn+1
+            C[i][j] = 1/h**2+1/(2*vr[i]*h)                         # Yn+1
             
         else:
             C[i][j] = 0
@@ -34,7 +43,7 @@ D = [[0.0038731], [0], [0], [0], [0.0030770]]
 
 Cin = al.inv(C)
 
-V = M_Multiplication(Cin, D)
+V = np.matmul(Cin, D)
 print(V)
 
 x_data = vr

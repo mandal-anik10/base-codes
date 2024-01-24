@@ -1,13 +1,10 @@
-# Shooting method: Inf Well Potential QM
+'''
+Shooting method: Quantum Hermonic Oscilator
 
+Author : Anik Mandal
+'''
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-def y2p(x, y, yp, energy):
-    p2 = (-2 * energy + x**2) * y
-    return p2
-
 
 # boundary conditions:
 xi = -10
@@ -15,6 +12,10 @@ xf = 10
 yi = 0
 yf = 0
 
+
+def y2p(x, y, yp, energy):
+    p2 = (-2 * energy + x**2) * y           # ODE
+    return p2
 
 def Euler_Approx(x_initial, x_final, num_point, y_initial, yp_initial, energy):
     xn = x_initial
@@ -37,7 +38,7 @@ def Euler_Approx(x_initial, x_final, num_point, y_initial, yp_initial, energy):
     return [xx, yy, Y1]
 
 
-num = 1 + 2 ** 10
+num = 1 + 2 ** 12
 ee = np.linspace(0, 10, num)         # Range of energy values
 alp = 1         # yp_initial(assumed, any non-zero positive value as long as y2p doesn't depend on yp)
 Y_err = []      # List to store error value in y_final
@@ -48,7 +49,7 @@ for i in range(len(ee)):
 
 
 # print(ee,Y_err)
-plt.plot(ee, Y_err, '.')       # Energies vs error in final output
+# plt.plot(ee, Y_err, '.')       # Energies vs error in final output
 
 
 # Scanning: Of Eigen_Values
@@ -66,13 +67,17 @@ def Eigen_energies(Y_error):
 Eigen_e = Eigen_energies(Y_err)[0]
 print('Eigen Energies: ', Eigen_e)
 
-# # plotting:
-# n = 5       # Define Eigen State(1=ground, 2=1st_excited,...)
-# a = Eigen_e[n-1]
-# x_data = Euler_Approx(xi, xf, num, yi, alp, a)[0]
-# y_data = Euler_Approx(xi, xf, num, yi, alp, a)[1]
-#
-# plt.plot(x_data, y_data, 'r') plt.title('Quantum Harmonic Oscillator: Eigen Function\n Quantum number= '+str(n)+'
-# Corresponding Eigen energy value= '+str(a))
+# plotting:
+n = 5       # Define Eigen State(1=ground, 2=1st_excited,...)
+a = Eigen_e[n-1]
+x_data = Euler_Approx(xi, xf, num, yi, alp, a)[0]
+y_data = Euler_Approx(xi, xf, num, yi, alp, a)[1]
+
+plt.plot(x_data, y_data, 'r') 
+plt.xlabel('x')
+plt.ylabel(r'$\psi$ (x)')
+plt.title('Quantum Harmonic Oscillator: Eigen Function\n Quantum number= '+str(n)+
+          ' Corresponding Eigen energy value= '+str(a))
+plt.ylim([np.min(y_data)*1.1, -np.min(y_data)*1.5])
 plt.grid()
 plt.show()

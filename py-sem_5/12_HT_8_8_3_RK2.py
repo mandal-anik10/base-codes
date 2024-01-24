@@ -1,7 +1,12 @@
+'''
+#2: Solving ODE for a two label radioctive decay using RK-2
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Integration import *
-import pandas as pd
+import json
 
 t0 = 0
 N = 0
@@ -22,7 +27,7 @@ zz = [0]
 
 
 def m(t, N_2):
-    s = l1*np.exp(-l1*t)-l2*N_2
+    s = l1*np.exp(-l1*t)-l2*N_2     # ODE
     return s
 
 
@@ -42,7 +47,7 @@ while i < n-1:
     zz.append(z)
     i = i+1
 
-ig = Integrate(NN, t0, t0+n*h, n)
+ig = np.trapz(NN, tt, dx=tt[1]-tt[0])
 print('Value of Integration(0s to 40s)', ig)
 
 t_data=[]
@@ -51,9 +56,11 @@ for i in range (len(tt)):
     if round(tt[i],1)%1==0:
         t_data.append(tt[i])
         N_data.append(NN[i])
-df = pd.DataFrame({'Time(s)': t_data, 'N_2': N_data})
-df.to_excel(r'C:\Users\Anik Mandal\PycharmProjects\Sem_5\val_8_8_3.xlsx')
-print(df)
+
+data = {'Time(s)': t_data, 'N_2': N_data}
+with open('/home/anik/base-codes/py-sem_5/val_8_8_3.json', 'w') as f:
+    json.dump(data, f)
+print(data)
 
 
 plt.plot(tt, NN, 'r')

@@ -1,4 +1,8 @@
-# IVP: Euler's method for solving 2nd order ODE:
+'''
+IVP: Euler's method for solving 2nd order ODE:
+
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -33,6 +37,8 @@ for i in range(1, n):
     yy.append(yi)
 
 plt.plot(tt, yy)
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
 plt.grid()
 plt.show()
 

@@ -1,8 +1,12 @@
+'''
+#1: Solving ODE for a particle free falling in air using RK-2
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-from LocalModule.Integration import *
-import pandas as pd
-import sys
+import json
 
 t0 = 0
 v0 = 0
@@ -23,7 +27,7 @@ zz = [0]
 
 
 def m(t, v):
-    s = g-a*v
+    s = g-a*v           # ODE
     return s
 
 
@@ -43,9 +47,8 @@ while i < n-1:
     zz.append(z)
     i = i+1
 
-ig = Integrate(vv, t0, t0+200*h, 201)
+ig = np.trapz(vv, tt, dx=tt[1]-tt[0])
 print('Value of Integration(0s to 20s)', ig)
-
 print('v(', t0+100*h, '):', vv[100])
 
 t_data = []
@@ -56,9 +59,10 @@ for i in range(201):
         t_data.append(tt[i])
         v_data.append(vv[i])
 
-df = pd.DataFrame({'Time(s)': t_data, 'Velocity(m/s)': v_data})
-df.to_excel(r'C:\Users\Anik Mandal\PycharmProjects\Sem_5\val.xlsx')
-print(df)
+data = {'Time(s)': t_data, 'Velocity(m/s)': v_data}
+with open('/home/anik/base-codes/py-sem_5/val_8_8_2.json', 'w') as f:
+    json.dump(data, f)
+print(data)
 
 # let assume, v(inf)==v(200)
 print('v(', t0+200*h, ')/v(inf):', vv[200]/vv[2000])

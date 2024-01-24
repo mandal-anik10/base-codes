@@ -1,4 +1,9 @@
-# Damping(over, crtical, small): 
+'''
+Solving Harmonic Oscilator ODE using Eular method with different 
+damping conditions(over, crtical, small): 
+
+Author = Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -35,11 +40,15 @@ for i in range(len(B)):
         tt.append(ti)
         yy.append(yi)
     plt.plot(tt, yy)
+    plt.xlabel('x')
+    plt.ylabel('f(x)')
     tt.clear()
     yy.clear()
 
 
 plt.legend(["Over damping","Critical damping","Small damping"])
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
 plt.grid()
 plt.show()
 

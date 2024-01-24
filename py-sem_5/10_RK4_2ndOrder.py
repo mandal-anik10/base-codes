@@ -1,10 +1,14 @@
-# RK4 method: for 2nd order
+'''
+RK4 method: for 2nd order
+
+Author : Anik Mandal
+'''
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 def y2p(x, y, y_p):
-    p2 = -10*y_p - 100*y          # Function
+    p2 = -10*y_p - 100*y            # ODE
     return p2
     
 # condition:
@@ -56,5 +60,7 @@ for i in range(1, n):
     yy.append(yn)
 
 plt.plot(xx, yy)
+plt.xlabel('x')
+plt.ylabel('f(x)')
 plt.grid()
 plt.show()

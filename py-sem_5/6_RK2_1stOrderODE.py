@@ -1,14 +1,19 @@
-# RK2 method: for 1st order
+'''
+RK2 method: for 1st order
+
+Author : Anik Mandal
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-
-def yp(x, y):
-    p = 2*x        # Function
-    return p
 
 # condition:
 x0 = 0
 y0 = 0
+
+def yp(x, y):
+    p = 2*x                     #ODE
+    return p
 
 yp0 = yp(x0, y0)
 (xi, xf, n) = (x0, 3, 128)
@@ -36,5 +41,7 @@ for i in range(1,n):
     yy.append(yn)
 
 plt.plot(xx, yy)
+plt.xlabel('x')
+plt.ylabel('f(x)')
 plt.grid()
 plt.show()
