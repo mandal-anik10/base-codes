@@ -108,8 +108,8 @@ def animate(frame):
         p.vel[i][0] = p.vel[i][0] + p.acc[i][0] * dt
         p.pos[i][0] = p.pos[i][0] + p.vel[i][0] * dt
     
-    if i % 300 == 0:				# for checking animation progress
-        print(i / 60, '%' )
+    if frame % 300 == 0.0:				# for checking animation progress
+        print(frame / 60, '%' )
 
 
 ani = FuncAnimation(fig, animate, frames=6000, interval=10)

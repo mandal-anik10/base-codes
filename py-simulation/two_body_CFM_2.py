@@ -110,12 +110,12 @@ def animate(frame):
 
     orange.pos = orange.pos + orange.momentum * dt / orange.mass
     blue.pos = blue.pos + blue.momentum * dt / blue.mass
-
-    if frame%300 == 0:
-        print(frame/60, '%')
+    print(frame)
+    if frame%100 == 0:
+        print(frame/20, '%')
     
     
-ani = FuncAnimation(fig, animate, frames=6000, interval=10)
+ani = FuncAnimation(fig, animate, frames=2000, interval=10)
 plt.title('Perspective : '+perspective.name)
 print('Running...')
 f_location = 'outputs/two_body_CFM_twoForceField.mp4'

@@ -54,28 +54,36 @@ earth = Object(name='Earth',
 moon = Object(name='Moon',
               mass=20,
               pos=[[150], [0], [0]],
-              momentum=[[0], [1200], [0]])
+              momentum=[[0], [1100], [0]])
 
 # plotting:
 fig = plt.figure(figsize=(16, 9), dpi=100)
-L = 5             # window size
-ax = fig.add_subplot(xlim=(-L, L), ylim=(-L, L))
-ax.set_aspect('equal')
+L = 250             # window size
+ax1 = fig.add_subplot(121, xlim=(-L, L), ylim=(-L, L))
+ax1.set_aspect('equal')
+l = 5
+ax2 = fig.add_subplot(122, xlim=(-l, l), ylim=(-l, l))
+ax2.set_aspect('equal')
 # object plot
-P_s, = ax.plot([], color='orange', marker='o', markersize=10)
-P_v, = ax.plot([], color='green', marker='.', markersize=5)
-P_e, = ax.plot([], color='blue', marker='.', markersize=5)
-P_m, = ax.plot([], color='black', marker='.', markersize=2)
-ax.legend(['Sun', 'Venus', 'Earth', 'Moon'], loc='upper left')
+P_s, = ax1.plot([], color='orange', marker='o', markersize=25)
+P_v, = ax1.plot([], color='green', marker='.', markersize=10)
+P_e, = ax1.plot([], color='blue', marker='.', markersize=10)
+P_m, = ax1.plot([], color='black', marker='.', markersize=5)
+ax1.legend(['Sun', 'Venus', 'Earth', 'Moon'], loc='upper left')
 # trail plot
-tr_s, = ax.plot([], color='orange', alpha=0.3, lw=1)
-tr_v, = ax.plot([], color='green', alpha=0.3, lw=1)
-tr_e, = ax.plot([], color='cyan', alpha=0.5, lw=1)
-tr_m, = ax.plot([], color='black', alpha=0.3, lw=1)
-time_text = ax.text(L*0.60, L*0.90, '')
+tr_s, = ax1.plot([], color='orange', alpha=0.3, lw=1)
+tr_v, = ax1.plot([], color='green', alpha=0.3, lw=1)
+tr_e, = ax1.plot([], color='cyan', alpha=0.5, lw=1)
+tr_m, = ax1.plot([], color='black', alpha=0.3, lw=1)
+time_text = ax1.text(L*0.60, L*0.90, '')
+
+P_e2, = ax2.plot([], color='blue', marker='.', markersize=10)
+P_m2, = ax2.plot([], color='black', marker='.', markersize=5)
+tr_e2, = ax2.plot([], color='cyan', alpha=0.5, lw=1)
+tr_m2, = ax2.plot([], color='black', alpha=0.3, lw=1)
 
 lsx, lsy, lvx, lvy, lex, ley, lmx, lmy = [], [], [], [], [], [], [], []
-dt = 0.05          # in program calculation delay time
+dt = 0.005          # in program calculation delay time
 
 
 def Track(o, perspective):
@@ -93,6 +101,8 @@ def animate(frame):
     P_v.set_data((vx, vy))
     P_e.set_data((ex, ey))
     P_m.set_data(mx, my)
+    P_e2.set_data((ex, ey))
+    P_m2.set_data(mx, my)
     
     lsx.append(sx)
     lsy.append(sy)
@@ -102,17 +112,19 @@ def animate(frame):
     ley.append(ey)
     lmx.append(mx)
     lmy.append(my)
-    time_text.set_text('time = %.1fdays' % (frame*365/2000))
+    time_text.set_text('time = %.1fdays' % (frame*365/4450))
     trail_length = 1500         # in frames
     tr_s.set_data(lsx[-trail_length:], lsy[-trail_length:])
     tr_v.set_data(lvx[-trail_length:], lvy[-trail_length:])
     tr_e.set_data(lex[-trail_length:], ley[-trail_length:])
     tr_m.set_data(lmx[-trail_length:], lmy[-trail_length:])
+    tr_e2.set_data(lex[-trail_length:], ley[-trail_length:])
+    tr_m2.set_data(lmx[-trail_length:], lmy[-trail_length:])
 
     sun.force = Net_F(sun, [venus, earth])
     venus.force = Net_F(venus, [sun, earth])
     earth.force = Net_F(earth, [sun, venus, moon])
-    moon.force = Net_F(moon, [earth])
+    moon.force = Net_F(moon, [earth, sun])
 
     sun.momentum = sun.momentum + sun.force * dt
     venus.momentum = venus.momentum + venus.force * dt
@@ -129,8 +141,10 @@ def animate(frame):
 
 
 ani = FuncAnimation(fig, animate, frames=6000, interval=10)
-plt.title('Perspective : '+ perspective.name+' (Approximated version)')
-plt.grid()
+plt.suptitle('Perspective : '+ perspective.name+' (Approximated version)')
+ax2.set_title('zoomed in earth-moon system')
+ax1.grid()
+ax2.grid()
 print('Running...')
 f_location = 'outputs/drunk_venus.mp4'
 Writer = FFMpegWriter(fps=100)
