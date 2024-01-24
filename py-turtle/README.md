@@ -1,0 +1,1 @@
+This file contains some turtle scripts that I wrote during my graduation as a part of a special certificate course.

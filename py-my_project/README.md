@@ -1,0 +1,1 @@
+This file contains all codes that I wrote as a part of my learning process.
